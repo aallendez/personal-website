@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sora: "Sora", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
+  color-scheme: 'light';
+}
+
+/* Add dark mode colors */
+body {
+  @apply bg-color-8 text-black dark:bg-color-7 dark:text-white;
+}
+
+
+
+.group:hover .peer:not(:hover) {
+  opacity: 0.5;
+}
+
+.groupProj:hover .peer:not(:hover) {
+  opacity: 0.5;
+}
+
+.long-transition {
+  transition: opacity 0.5s ease;
+}
+
+
+
+.mouse-glow {
+  position: fixed;
+  width: 600px; /* No fixed width or height */
+  height: 600px; /* No fixed width or height */
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at center, rgba(0, 255, 34, 0.05), transparent 70%);
+  width: 1000px; /* Adjust size as needed */
+  height: 1000px; /* Adjust size as needed */
+  transition: transform 0.05s linear;
+  z-index: 9999; /* Ensure it stays above other elements */
+}
+
+
+
+/* This targets the moving circles */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #3490dc; /* Tailwind CSS blue-500 color */
+  border-radius: 50%;
+  position: absolute;
+  animation: spin 8s linear infinite;
+}
+
+.circle:hover {
+  animation-play-state: paused;
+}
+
+
+/* This targets the scrollbar track (the background) */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Makes the track background transparent */
+}
+
+/* This targets the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.1); /* Dark handle for contrast */
+  border-radius: 4px; /* Optional: Rounds the corners of the scrollbar handle */
+}
+
+/* This targets the scrollbar itself (the whole scrollbar container) */
+::-webkit-scrollbar {
+  width: 8px; /* Adjusts the width of the vertical scrollbar */
+  height: 8px; /* Adjusts the height of the horizontal scrollbar */
+}
+
+* {
+  scroll-behavior: smooth;
+}
