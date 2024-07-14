@@ -7,13 +7,13 @@ import { ReactIcon } from '../assets/Icons';
 
 const ProjectInfo = [
     {
-        title:"Euro 2024 Machine Learning Model",
+        title:"ML Related Project",
         img: euro2024,
         description: "I'm a football fan and my team, Spain, reached the final. I used my machine learning knowledge to predict the outcome of the final.",
         report: "",
         link: "", 
         stack: ["Python", "Machine Learning"],
-        date: "July 2024"
+        date: "July 2024 - Present"
     },
     {
         title:"Proof of Concept Design for a Pitch",
@@ -29,7 +29,7 @@ const ProjectInfo = [
         img: Zeffo,
         description: "I created a tailored web scraper and fine tuned llm to produced quality audits for eccomerce websites.",
         report: "I created AI.",
-        link: "",
+
         stack: ["React", "TailwindCSS", "MongoDB", "Python"],
         date: "May 2024",
     },
@@ -65,16 +65,19 @@ const ProjectPopUp = ({ report }) => {
     );
 };
 
-const StackComponent = ({ stack, icon }) => {
+const StackComponent = ({ stack, filterList }) => {
+    const handleFilter = () => {
+        filterList.push(...stack);  
+    };
+
     return(
-        <div class="rounded-full text-xs px-3 py-2 w-auto flex flex-row bg-green-500 hover:bg-green-400 transition-all">
+        <button class="rounded-full text-xs px-3 py-2 w-auto flex flex-row bg-green-500 hover:bg-green-400 transition-all">
             <h1>{stack}</h1>
-            {icon}
-        </div>
+        </button>
     );
 };
 
-const Project = ({ title, img, description, report, link, iconColor, stack, date }) => {
+const Project = ({ title, img, description, report, link, iconColor, stack, date, filterList }) => {
     const ShareIcon = (
         <svg viewBox="0 0 24 24" className="w-[25px] " fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -87,32 +90,36 @@ const Project = ({ title, img, description, report, link, iconColor, stack, date
 
     return (
         <>
-            <div className="flex sm:w-full w-[900px] h-auto flex-row sm:flex-col items-start sm:items-center text-center gap-10 justify-center my-6 rounded-3xl transition-all cursor-pointer peer long-transition group">
-                <img
-                    src={img}
-                    alt={title}
-                    className="min-w-[300px] h-[150px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all"
-                />
-                <div className="text-left flex flex-col w-2/3 h-[150px] items-start justify-start">
-                    <div className="text-2xl flex flex-row gap-4">
-                        <h1 className='group-hover:font-bold'>{title}</h1>
-                        <p className="my-2 font-light opacity-70 text-xs">{date}</p>
-                        <div className="transition-transform transform group-hover:translate-x-1 group-hover:-translate-y-1 flex ">
-                            {ShareIcon}
-                        </div>    
-                    </div>
-                    <p className="my-2 font-light opacity-70 text-sm">{description}</p>
-                    <div className='flex flex-row gap-4 mt-auto'>
-                        {stack.map((stack) => (
-                            <StackComponent stack={stack}/>     
-                        ))}
+            <a href={link} target='_blank'>
+                <div className="flex sm:w-full w-[900px] h-auto flex-row sm:flex-col items-start sm:items-center text-center gap-10 justify-center my-6 rounded-3xl transition-all cursor-pointer peer long-transition group" >
+                    <img
+                        src={img}
+                        alt={title}
+                        className="min-w-[300px] h-[150px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all"
+                    />
+                    <div className="text-left flex flex-col w-2/3 h-[150px] items-start justify-start">
+                        <div className="text-2xl flex flex-row gap-2 w-full">
+                            <h1 className='group-hover:font-bold max-w-1/2'>{title}</h1>
+                            <p className="my-2 font-light opacity-70 text-xs">{date}</p>
+                            <div className="transition-transform transform group-hover:translate-x-1 group-hover:-translate-y-1 flex ">
+                                {ShareIcon}
+                            </div>    
+                        </div>
+                        <p className="my-2 font-light opacity-70 text-sm">{description}</p>
+                        <div className='flex flex-row gap-4 mt-auto'>
+                            {stack.map((stack) => (
+                                <StackComponent stack={stack} filterList={filterList}/>     
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
             {/* <ProjectPopUp report={report} /> */}
         </>
     );
 };
+
+
 
 const Projects = ({ iconColor }) => {
     const ShareIcon = (
@@ -125,10 +132,18 @@ const Projects = ({ iconColor }) => {
         </svg>
     );
 
+    const filterList = [
+
+    ];
+
     return (
         <div id="projects" className="pt-32 relative min-h-screen h-auto w-full flex flex-col items-center justify-center">
-            <h1 className='text-3xl w-full text-center'>Recent Projects</h1>
+            <h1 className='text-3xl font-bold w-full text-center mb-6'>Recent Selected Projects</h1>
             <div className=' flex flex-col items-start justify-center w-auto groupProj'>
+                <div className='flex flex-row w-full items-start'>
+                    
+                </div>
+                <div className={`${iconColor==="#000000" ? "bg-black" : "bg-white"} w-full h-[1px] my-6 opacity-80`}></div>
                 {ProjectInfo.map((project) => (
                 <Project
                     title={project.title}
@@ -139,6 +154,7 @@ const Projects = ({ iconColor }) => {
                     iconColor={iconColor}
                     stack={project.stack}
                     date={project.date}
+                    filterList={filterList}
                 />
                 ))}
             </div>
