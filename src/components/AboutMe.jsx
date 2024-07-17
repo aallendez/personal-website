@@ -2,7 +2,7 @@ import { TailwindIcon, ReactIcon, PythonIcon, MongoDBIcon, PremiereProIcon, Afte
 
 const AboutMe = ({ iconColor }) => {
     return(
-      <div id="aboutMe" className="pt-32 w-full min-h-screen flex flex-row sm:flex-col text-center gap-20 items-start px-16" >
+      <div id="aboutMe" className="pt-32 w-full min-h-screen flex flex-row sm:flex-col-reverse md:flex-col-reverse xs:flex-col-reverse text-center gap-20 items-start px-16 md:px-0 sm:px-0 xs:px-0" >
         <div className="w-full group">
           <div className="pb-6">
             <h3 className='text-3xl font-bold'>My Tech Stack</h3>
