@@ -138,7 +138,7 @@ const Projects = ({ iconColor }) => {
     return (
         <div id="projects" className="pt-32 relative min-h-screen h-auto w-full flex flex-col items-center justify-center">
             <h1 className='text-3xl font-bold w-full text-center mb-6'>Recent Selected Projects</h1>
-            <div className='flex flex-col items-start md:items-center sm:items-center xs:items-center justify-center sm:px-2 xs:px-8 w-auto groupProj'>
+            <div className='flex flex-col items-start md:items-center sm:items-center xs:items-center justify-center sm:px-2 xs:px-0 w-auto groupProj'>
                 <div className={`${iconColor==="#000000" ? "bg-black" : "bg-white"} w-full h-[1px] my-6 md:w-3/4 opacity-80`}></div>
                 {ProjectInfo.map((project) => (
                 <Project
