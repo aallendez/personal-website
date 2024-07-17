@@ -91,7 +91,7 @@ const Project = ({ title, img, description, report, link, iconColor, stack, date
     return (
         <>
             <a href={link} target='_blank'>
-                <div className="flex w-[900px] h-auto flex-row xs:flex-col sm:flex-col md:flex-col items-start md:w-[400px] sm:items-start text-center justify-center my-16 sm:my-24 xs:my-24 gap-10 rounded-3xl transition-all cursor-pointer peer long-transition group" >
+                <div className="flex w-[900px] h-auto flex-row xs:flex-col sm:flex-col md:flex-col items-start md:w-[350px] sm:items-start text-center justify-center my-16 sm:my-24 xs:my-24 gap-10 rounded-3xl transition-all cursor-pointer peer long-transition group" >
                     <img
                         src={img}
                         alt={title}
