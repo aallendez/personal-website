@@ -13,9 +13,10 @@ export default {
   theme: {
     extend: {
       screens: {
+        'xs': {'max': '400px'},
         'sm': {'max': '640px'},
         'md': {'max': '1000px'},
-        'lg': {'min': '2000px'},
+        'lg': {'min': '1500px'},
       },
       colors: {
         color: {
