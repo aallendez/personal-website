@@ -91,15 +91,15 @@ const Project = ({ title, img, description, report, link, iconColor, stack, date
     return (
         <>
             <a href={link} target='_blank'>
-                <div className="flex sm:w-full w-[900px] h-auto flex-row sm:flex-col items-start sm:items-center text-center gap-10 justify-center my-6 rounded-3xl transition-all cursor-pointer peer long-transition group" >
+                <div className="flex w-[900px] h-auto flex-row xs:flex-col sm:flex-col md:flex-col items-start md:w-[400px] sm:items-start text-center justify-center my-16 sm:my-24 xs:my-24 gap-10 rounded-3xl transition-all cursor-pointer peer long-transition group" >
                     <img
                         src={img}
                         alt={title}
-                        className="min-w-[300px] h-[150px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all"
+                        className="sm:min-w-full xs:min-w-full md:min-w-full min-w-[300px] md:h-[200px] h-[150px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all"
                     />
-                    <div className="text-left flex flex-col w-2/3 h-[150px] items-start justify-start">
+                    <div className="text-left flex flex-col w-2/3 md:w-full h-[150px] items-start justify-start">
                         <div className="text-2xl flex flex-row gap-2 w-full">
-                            <h1 className='group-hover:font-bold max-w-1/2'>{title}</h1>
+                            <h1 className='group-hover:font-bold max-w-1/2 md:w-full'>{title}</h1>
                             <p className="my-2 font-light opacity-70 text-xs">{date}</p>
                             <div className="transition-transform transform group-hover:translate-x-1 group-hover:-translate-y-1 flex ">
                                 {ShareIcon}
@@ -114,7 +114,6 @@ const Project = ({ title, img, description, report, link, iconColor, stack, date
                     </div>
                 </div>
             </a>
-            {/* <ProjectPopUp report={report} /> */}
         </>
     );
 };
@@ -139,11 +138,8 @@ const Projects = ({ iconColor }) => {
     return (
         <div id="projects" className="pt-32 relative min-h-screen h-auto w-full flex flex-col items-center justify-center">
             <h1 className='text-3xl font-bold w-full text-center mb-6'>Recent Selected Projects</h1>
-            <div className=' flex flex-col items-start justify-center w-auto groupProj'>
-                <div className='flex flex-row w-full items-start'>
-                    
-                </div>
-                <div className={`${iconColor==="#000000" ? "bg-black" : "bg-white"} w-full h-[1px] my-6 opacity-80`}></div>
+            <div className='flex flex-col items-start md:items-center sm:items-center xs:items-center justify-center sm:px-2 xs:px-8 w-auto groupProj'>
+                <div className={`${iconColor==="#000000" ? "bg-black" : "bg-white"} w-full h-[1px] my-6 md:w-3/4 opacity-80`}></div>
                 {ProjectInfo.map((project) => (
                 <Project
                     title={project.title}
