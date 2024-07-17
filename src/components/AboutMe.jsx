@@ -2,48 +2,48 @@ import { TailwindIcon, ReactIcon, PythonIcon, MongoDBIcon, PremiereProIcon, Afte
 
 const AboutMe = ({ iconColor }) => {
     return(
-      <div id="aboutMe" className="pt-32 w-full min-h-screen flex flex-row sm:flex-col-reverse md:flex-col-reverse xs:flex-col-reverse text-center gap-20 items-start px-16 md:px-0 sm:px-0 xs:px-0" >
+      <div id="aboutMe" className="pt-32 w-full min-h-screen flex flex-col-reverse sm:flex-col-reverse md:flex-col-reverse xs:flex-col-reverse text-center gap-20 items-start md:px-0 sm:px-0 xs:px-0" >
         <div className="w-full group">
           <div className="pb-6">
             <h3 className='text-3xl font-bold'>My Tech Stack</h3>
             <div className='flex flex-col items-start justify-center my-10'>
-              <div className="w-full flex flex-row gap-6 justify-between my-2">
-                <div className="flex flex-col items-center justify-start gap-6 peer long-transition">
+              <div className="w-full flex flex-row gap-6 justify-around my-2">
+                <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
                   <p>React</p>
                   <div className="mt-auto"><ReactIcon color={iconColor} /></div>
                 </div>
-                <div className="flex flex-col items-center justify-start gap-6 peer long-transition">
+                <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
                   <p>Python</p>
                   <div className="mt-auto"><PythonIcon color={iconColor} /></div>
                 </div>
-                <div className="flex flex-col items-center justify-start gap-6 peer long-transition">
+                <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
                   <p>MongoDB</p>
                   <div className="mt-auto"><MongoDBIcon color={iconColor} /></div>
                 </div>
-                <div className="flex flex-col items-center justify-start gap-6 peer long-transition">
+                <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
                   <p>Tailwindcss</p>
                   <div className="mt-auto"><TailwindIcon color={iconColor} /></div>
                 </div>
               </div>         
             </div>
           </div>
-          <div className="py-6 ">
+          <div className="py-6">
             <h3 className='text-3xl font-bold'>Aditional Skills</h3>
             <div className='flex flex-col items-start justify-center my-10'>
-              <div className="w-full flex flex-row gap-6 justify-between my-2">
-                <div className="flex flex-col items-center justify-start gap-6 peer long-transition">
+              <div className="w-full flex flex-row gap-6 justify-around my-2">
+                <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
                   <p>Premiere Pro</p>
                   <div className="mt-auto"><PremiereProIcon color={iconColor} /></div>
                 </div>
-                <div className="flex flex-col items-center justify-start gap-6 peer long-transition">
+                <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
                   <p>Photoshop</p>
                   <div className="mt-auto"><PhotoshopIcon color={iconColor} /></div>
                 </div>
-                <div className="flex flex-col items-center justify-start gap-6 peer long-transition">
+                <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
                   <p>After Effects</p>
                   <div className="mt-auto"><AfterEffectsIcon color={iconColor} /></div>
                 </div>
-                <div className="flex flex-col items-center justify-start gap-6 peer long-transition">
+                <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
                   <p>Zapier</p>
                   <div className="mt-auto"><ZapierIcon color={iconColor} /></div>
                 </div>
