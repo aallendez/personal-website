@@ -48,6 +48,16 @@ body {
   z-index: 9999; /* Ensure it stays above other elements */
 }
 
+@media (max-width: 1500px) {
+  .group:hover .peer:not(:hover) {
+    opacity: 1;
+  }
+  
+  .groupProj:hover .peer:not(:hover) {
+    opacity: 1;
+  }
+}
+
 
 
 /* This targets the moving circles */
