@@ -1,5 +1,3 @@
-import juan_logo from '../assets/juan_logo.gif';
-import juan_logo_w from '../assets/juan_logo_w.gif';
 
 const Title = ({ theme }) => {
   return(
