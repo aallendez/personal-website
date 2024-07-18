@@ -10,7 +10,7 @@ const Title = ({ theme }) => {
           <p className="peer long-transition h-full flex items-center">Artificial Intelligence</p>
           <p className="peer long-transition h-full flex items-center">Business Enthusiast</p>
         </div>
-        <img src={theme === 'dark' ? juan_logo_w : juan_logo} alt="Juan" className="w-[150px] h-[150px] rounded-full" />
+        
       </div>
   );
 }
