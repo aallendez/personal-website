@@ -1,6 +1,4 @@
 import juan from '../assets/juan.png';
-import juan_logo from '../assets/juan_logo.gif';
-import juan_logo_w from '../assets/juan_logo_w.gif';
 import { MenuIcon, CloseIcon } from '../assets/Icons';
 import { useState } from 'react';
 
