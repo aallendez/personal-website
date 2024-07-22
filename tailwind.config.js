@@ -13,9 +13,10 @@ export default {
   theme: {
     extend: {
       screens: {
+        'xs': {'max': '400px'},
         'sm': {'max': '640px'},
         'md': {'max': '1000px'},
-        'lg': {'min': '2000px'},
+        'lg': {'min': '1500px'},
       },
       colors: {
         color: {
@@ -93,6 +94,14 @@ export default {
       backgroundColor: ['disabled'],
       scale: ['hover', 'focus'],
       keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
         'fade-in-down': {
           '0%': { transform: 'translateY(-10px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
@@ -145,6 +154,10 @@ export default {
         'fade-in-20': 'fade-in-20 0.25s',
         'fade-out-20': 'fade-out-20 0.25s',
         'zoom-out': 'zoom-out 0.25s',
+      },
+      animation: {
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
     },
   },

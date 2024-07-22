@@ -22,7 +22,7 @@ body {
 
 
 .group:hover .peer:not(:hover) {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .groupProj:hover .peer:not(:hover) {
@@ -46,6 +46,16 @@ body {
   height: 1000px; /* Adjust size as needed */
   transition: transform 0.05s linear;
   z-index: 9999; /* Ensure it stays above other elements */
+}
+
+@media (max-width: 1500px) {
+  .group:hover .peer:not(:hover) {
+    opacity: 1;
+  }
+  
+  .groupProj:hover .peer:not(:hover) {
+    opacity: 1;
+  }
 }
 
 

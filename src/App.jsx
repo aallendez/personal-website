@@ -7,6 +7,15 @@ import Header from './components/Header';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 
+// lib/utils.js
+import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs) {
+  return twMerge(clsx(inputs));
+}
+
+
 const MovingCircle = () => {
   return (
     <div className="flex justify-center items-center">
@@ -55,7 +64,7 @@ function App() {
 
   return (
     <>
-      <div className={`w-full sm:px-2 px-32 lg:px-[20%] h-screen ${theme} cursor-default`}>
+      <div className={`w-full xs:px-6 sm:px-2 px-32 lg:px-[20%] h-screen ${theme} cursor-default`}>
         <Header theme={theme} toggleTheme={toggleTheme} iconColor={iconColor} />
         <Title theme={theme} />
         <AboutMe iconColor={iconColor} />
