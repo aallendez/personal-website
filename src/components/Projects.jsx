@@ -11,7 +11,6 @@ const ProjectInfo = [
         img: euro2024,
         description: "I'm a football fan and my team, Spain, reached the final. I used my machine learning knowledge to predict the outcome of the final.",
         report: "",
-        link: "", 
         stack: ["Python", "Machine Learning"],
         date: "July 2024 - Present"
     },
@@ -20,7 +19,6 @@ const ProjectInfo = [
         img: Nokia,
         description: "After working with react for about a month, I decided to challenge myself and create a proof of concept design for a pitch with React in less than a week.",
         report: "",
-        link: "", 
         stack: ["React", "TailwindCSS"],
         date: "June 2024"
     },
@@ -29,7 +27,6 @@ const ProjectInfo = [
         img: Zeffo,
         description: "I created a tailored web scraper and fine tuned llm to produced quality audits for eccomerce websites.",
         report: "I created AI.",
-
         stack: ["React", "TailwindCSS", "MongoDB", "Python"],
         date: "May 2024",
     },
