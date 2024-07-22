@@ -4,7 +4,7 @@ import BlurIn from './BlurIn';
 
 const Title = ({ theme }) => {
   const qualities = (
-    <div className='flex flex-row gap-10 sm:gap-0 h-16 items-center group'>
+    <div className='flex flex-row gap-10 sm:gap-2 h-16 items-center group'>
       <p className="peer long-transition h-full flex items-center">Full Stack Developer</p>
       <p className="peer long-transition h-full flex items-center">Artificial Intelligence</p>
       <p className="peer long-transition h-full flex items-center">Business Enthusiast</p>
