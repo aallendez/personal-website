@@ -151,7 +151,7 @@ const Projects = ({ iconColor }) => {
                 />
                 ))}
             </div>
-            <div className='flex flex-row items-center justify-center mt-20 mb-24 group gap-2'>
+            <div className='flex flex-row items-center justify-center mt-20 mb-24 group gap-2 hidden'>
                 <a className=' text-lg opacity-80 w-full text-center cursor-pointer group-hover:opacity-100 transition-all'>See all projects</a>
                 <div className='group-hover:translate-x-1 group-hover:-translate-y-1 transition-all'>
                     {ShareIcon}
