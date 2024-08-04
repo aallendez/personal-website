@@ -168,7 +168,7 @@ const Projects = ({ iconColor }) => {
                     } />
                 ))}
             </div>
-            <BlurIn word={CTA} className="" />
+            <BlurIn word={CTA} className="hidden" />
         </div>
     );
 };
