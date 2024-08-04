@@ -6,8 +6,8 @@ import BlurIn from "./BlurIn";
 
 const aboutMe = (
   <div>
-    <p><br />I'm a Full Stack Developer, AI enthusiast and Businessman. I am also a Computer Science & Artificial Intelligence in Spain. 
-    <br />I've always considered myself to be curious. When I was 13 years old, I started shooting and editing videos and eventually got pretty good at it. I also play the guitar, and got a lot into music production. However, since 2023 I am deeply involved in <strong className="hover:opacity-80 transition-opacity">software development</strong> and <strong className="hover:opacity-80 transition-opacity">artificial intelligence</strong>.
+    <p><br />I'm a Full Stack Developer, AI and Business enthusiast. I am also a Computer Science & Artificial Intelligence student in Spain. 
+    <br />I've always considered myself to be curious. When I was 13 years old, I started shooting and editing videos and eventually got pretty good at it which provided me with several professional opportunities. I also play the guitar, and got a lot into music production. However, since 2023 I am deeply involved in <strong className="hover:opacity-80 transition-opacity">software development</strong> and <strong className="hover:opacity-80 transition-opacity">artificial intelligence</strong>.
     <br /><br />I love creating software that delivers value to businesses and provides a great user experience. I am also passionate about using the data we collect from these products to improve and iterate.
     <br /><br />I am a project-based learning person. That's why I continuously want to develop cool projects in different areas. I decided to fit them all into <strong className="hover:opacity-80 transition-opacity">ARKANIS PROJECTS</strong>, the name under which I develop all my projects.
     <br /><br />If you want to talk about any project, idea or topic, feel free to contact me. I'm always excited to meet new people and learn new things.
