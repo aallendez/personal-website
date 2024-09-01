@@ -5,9 +5,18 @@ import chatbot_larocket from '../assets/chatbot_larocket.png';
 import euro2024 from '../assets/euro2024.jpeg';
 import { ReactIcon } from '../assets/Icons';
 import WordPullUp from './WordPullUp';
+import crickleCreek from '../assets/crickleCreek.png';
 import BlurIn from './BlurIn';
 
 const ProjectInfo = [
+    {
+        title:"User Subscription Flow for Coffee Brand",
+        img: crickleCreek,
+        description: "I developed a subscription flow for a coffee brand in which users can discover their best coffee fit and order.",
+        report: "",
+        stack: ["React", "TailwindCSS", "ShopifyAPI", "GraphiQL"],
+        date: "August 2024"
+    },
     {
         title:"ML Related Project",
         img: euro2024,
