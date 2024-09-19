@@ -27,3 +27,5 @@ const Title = ({ theme, iconColor }) => {
 
 export default Title;
 
+"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"
+"git remote set-url origin https://<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>@github.com/aallendez/personal-website.git"
