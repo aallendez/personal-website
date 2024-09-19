@@ -17,7 +17,7 @@ const aboutMe = (
 const AboutMe = ({ iconColor }) => {
     const techStack = (
       <div className='flex flex-col items-start justify-center my-10'>
-        <div className="w-full flex flex-row gap-6 justify-around my-2">
+        <div className="w-full flex flex-row xs:grid xs:grid-cols-2 gap-6 justify-around my-2">
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>React</p>
             <div className="mt-auto"><ReactIcon color={iconColor} /></div>
@@ -40,7 +40,7 @@ const AboutMe = ({ iconColor }) => {
     
     const additionalSkills = (
       <div className='flex flex-col items-start justify-center my-10'>
-        <div className="w-full flex flex-row gap-6 justify-around my-2">
+        <div className="w-full flex flex-row xs:grid xs:grid-cols-2 gap-6 justify-around my-2">
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>Premiere Pro</p>
             <div className="mt-auto"><PremiereProIcon color={iconColor} /></div>
@@ -63,19 +63,19 @@ const AboutMe = ({ iconColor }) => {
 
   
     return(
-      <div id="aboutMe" className="pt-32 w-full min-h-screen flex flex-col-reverse sm:flex-col-reverse md:flex-col-reverse xs:flex-col-reverse text-center gap-20 items-start md:px-4" >
+      <div id="aboutMe" className="pt-32 w-full min-h-screen flex flex-col-reverse sm:flex-col-reverse md:flex-col-reverse xs:flex-col-reverse text-center gap-20 items-start md:px-4 xs:px-0" >
         <div className="w-full group">
           <div className="pb-6">
-            <WordPullUp words="🛠️ My Tech Stack" className="text-[35px] text-left sm:text-[24px] font-bold" />
+            <WordPullUp words="🛠️ My Tech Stack" className="text-[35px] text-left sm:text-[24px] xs:text-[16px] font-bold" />
             <BlurIn word={techStack} className="text-left font-[Sora] sm:text-[12px] sm:text-center" />
           </div>
           <div className="py-6">
-            <WordPullUp words="🎥 Additional Skills" className="text-[35px] text-left sm:text-[24px] font-bold" />
+            <WordPullUp words="🎥 Additional Skills" className="text-[35px] text-left sm:text-[24px] xs:text-[16px] font-bold" />
             <BlurIn word={additionalSkills} className="text-left font-[Sora] sm:text-[12px] sm:text-center" />
           </div>
         </div>
         <div className="">
-            <WordPullUp words="👋 Hi! I'm Juan" className="text-[35px] sm:text-[24px]  text-left font-bold" />
+            <WordPullUp words="👋 Hi! I'm Juan" className="text-[35px] sm:text-[24px] xs:text-[16px] text-left font-bold" />
             <div style={{lineHeight: '1.7'}}>
               <BlurIn word={aboutMe} className="text-left sm:text-[12px]" />
             </div>

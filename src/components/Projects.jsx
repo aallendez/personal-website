@@ -147,7 +147,7 @@ const Projects = ({ iconColor }) => {
     return (
         <div id="projects" className="pt-32 relative min-h-screen h-auto w-full flex flex-col items-center justify-center">
 
-            <WordPullUp words="🍳 Recent Projects" className="text-[35px] sm:text-[24px] font-bold w-full text-left mb-6" />
+            <WordPullUp words="🍳 Recent Projects" className="text-[35px] sm:text-[24px] xs:text-[16px] font-bold w-full text-left mb-6" />
             <div className='flex flex-col items-start md:items-center sm:items-center xs:items-center justify-center sm:px-2 xs:px-0 w-auto mb-32'>
                 {/* <BlurIn word={divider} className={`${iconColor==="#000000" ? "bg-black" : "bg-white"} w-full h-[1px] my-6 md:w-3/4 opacity-80`} /> */}
                 {ProjectInfo.map((project) => (

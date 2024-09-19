@@ -64,8 +64,8 @@ function App() {
 
   return (
     <>
-      <div className={`w-full xs:px-6 sm:px-2 px-[20%] lg:px-[26%] h-screen ${theme} cursor-default`}>
-        <div className='px-20'>
+      <div className={`w-full xs:border xs:px-6 xs:w-full sm:px-2 px-[20%] lg:px-[26%] h-screen ${theme} cursor-default`}>
+        <div className='xs:px-0 px-20'>
           <Header theme={theme} toggleTheme={toggleTheme} iconColor={iconColor} />
           <Title theme={theme} iconColor={iconColor} />
           <AboutMe iconColor={iconColor} />

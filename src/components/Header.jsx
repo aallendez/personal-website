@@ -16,7 +16,7 @@ const BurgerMenu = ({ theme, toggleTheme, iconColor }) => {
   };
 
   const verticalOptions = (
-    <div className="fixed top-0 border right-0 h-screen w-full flex flex-col items-center justify-center bg-white dark:bg-color-7 z-20 shadow-lg animate-fade-in">
+    <div className="fixed top-0 right-0 h-screen w-full flex flex-col items-center justify-center bg-white dark:bg-color-7 z-20 shadow-lg animate-fade-in">
       <button
               className={`hidden sm:flex rounded-full fixed h-[50px] w-[50px] z-30 left-10 top-10 flex-row items-center justify-center gap-10 ${theme === "dark" ? "bg-black" : "bg-green-50"} bg-opacity-40 backdrop-blur-md`}
               onClick={toggleTheme}
