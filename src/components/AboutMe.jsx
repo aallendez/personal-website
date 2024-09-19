@@ -66,18 +66,18 @@ const AboutMe = ({ iconColor }) => {
       <div id="aboutMe" className="pt-32 w-full min-h-screen flex flex-col-reverse sm:flex-col-reverse md:flex-col-reverse xs:flex-col-reverse text-center gap-20 items-start md:px-4" >
         <div className="w-full group">
           <div className="pb-6">
-            <WordPullUp words="🛠️ My Tech Stack" className="text-[35px] text-left sm:text-center xs:text-center font-bold" />
-            <BlurIn word={techStack} className="text-left font-[Sora]" />
+            <WordPullUp words="🛠️ My Tech Stack" className="text-[35px] text-left sm:text-[24px] font-bold" />
+            <BlurIn word={techStack} className="text-left font-[Sora] sm:text-[12px] sm:text-center" />
           </div>
           <div className="py-6">
-            <WordPullUp words="🎥 Additional Skills" className="text-[35px] text-left sm:text-center xs:text-center font-bold" />
-            <BlurIn word={additionalSkills} className="text-left font-[Sora]" />
+            <WordPullUp words="🎥 Additional Skills" className="text-[35px] text-left sm:text-[24px] font-bold" />
+            <BlurIn word={additionalSkills} className="text-left font-[Sora] sm:text-[12px] sm:text-center" />
           </div>
         </div>
         <div className="">
-            <WordPullUp words="👋 Hi! I'm Juan" className="text-[35px] text-left sm:text-center xs:text-center font-bold" />
+            <WordPullUp words="👋 Hi! I'm Juan" className="text-[35px] sm:text-[24px]  text-left font-bold" />
             <div style={{lineHeight: '1.7'}}>
-              <BlurIn word={aboutMe} className="text-left" />
+              <BlurIn word={aboutMe} className="text-left sm:text-[12px]" />
             </div>
             
         </div>

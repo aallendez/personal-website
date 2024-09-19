@@ -13,10 +13,10 @@ const Title = ({ theme, iconColor }) => {
 
   );
   return(
-      <div id="title" className="h-screen w-full flex sm:px-12 flex-col items-center justify-center text-center transition-all">
+      <div id="title" className="h-screen w-full flex sm:gap-10 sm:flex-col-reverse sm:px-12 flex-col items-center justify-center text-center transition-all">
         <Footer iconColor={iconColor}/>
-        <BlurIn word="Juan Alonso-Allende" className="text-[65px] sm:text-[35px] font-bold" />
-        <div className='flex flex-row gap-10 sm:gap-0 h-16 items-center group font-[Sora]'>
+        <BlurIn word="Juan Alonso-Allende" className="text-[65px] sm:text-[27px] font-bold" />
+        <div className='flex flex-row gap-10 sm:gap-0 sm:hidden h-16 items-center group font-[Sora]'>
           <BlurIn word={qualities} />
         </div>
       </div>

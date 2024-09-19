@@ -89,22 +89,22 @@ const Project = ({ title, img, description, report, link, iconColor, stack, date
     return (
         <>
             <a href={link} target='_blank'>
-                <div className={`flex w-[900px] px-20 opacity-60 hover:opacity-100 h-auto flex-row xs:flex-col sm:flex-col md:flex-col items-start md:w-[350px] sm:items-start text-center justify-center my-16 sm:my-24 xs:my-24 gap-10 rounded-3xl transition-all ${link ? "cursor-pointer" : ""} peer long-transition group`} >
+                <div className={`flex w-[900px] px-20 sm:px-4 opacity-60 hover:opacity-100 h-auto flex-row xs:flex-col sm:flex-col md:flex-col items-start md:w-[350px] sm:items-start text-center justify-center my-16 sm:my-24 xs:my-24 gap-10 rounded-3xl transition-all ${link ? "cursor-pointer" : ""} peer long-transition group`} >
                     <img
                         src={img}
                         alt={title}
                         className="sm:min-w-full xs:min-w-full md:min-w-full min-w-[300px] md:h-[200px] h-[150px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all"
                     />
                     <div className="text-left flex flex-col w-2/3 md:w-full h-[150px] items-start justify-start">
-                        <div className="text-2xl flex flex-row gap-2 w-full">
+                        <div className="text-2xl flex flex-row sm:items-start gap-2 w-full sm:text-[22px]">
                             <h1 className='font-bold min-w-1/2 md:w-full'>{title}</h1>
                             <p className="my-2 font-light opacity-70 min-w-[80px] text-xs">{date}</p>
                             <div className={`transition-transform transform ${link ? "group-hover:translate-x-1 group-hover:-translate-y-1" : "hidden"} flex `}>
                                 {ShareIcon}
                             </div>    
                         </div>
-                        <p className="my-2 font-light opacity-70 text-sm font-[Sora]">{description}</p>
-                        <div className='flex flex-row gap-4 mt-auto'>
+                        <p className="my-2 font-light opacity-70 text-sm sm:text[10px] font-[Sora]">{description}</p>
+                        <div className='flex flex-row flex-wrap gap-4 mt-auto w-full'>
                             {stack.map((stack) => (
                                 <StackComponent stack={stack} filterList={filterList}/>     
                             ))}
@@ -147,8 +147,8 @@ const Projects = ({ iconColor }) => {
     return (
         <div id="projects" className="pt-32 relative min-h-screen h-auto w-full flex flex-col items-center justify-center">
 
-            <WordPullUp words="🍳 Recent Projects" className="text-[35px] font-bold w-full text-left mb-6" />
-            <div className='flex flex-col items-start md:items-center sm:items-center xs:items-center justify-center sm:px-2 xs:px-0 w-auto '>
+            <WordPullUp words="🍳 Recent Projects" className="text-[35px] sm:text-[24px] font-bold w-full text-left mb-6" />
+            <div className='flex flex-col items-start md:items-center sm:items-center xs:items-center justify-center sm:px-2 xs:px-0 w-auto mb-32'>
                 {/* <BlurIn word={divider} className={`${iconColor==="#000000" ? "bg-black" : "bg-white"} w-full h-[1px] my-6 md:w-3/4 opacity-80`} /> */}
                 {ProjectInfo.map((project) => (
                     <BlurIn key={project.title} word={
@@ -166,7 +166,7 @@ const Projects = ({ iconColor }) => {
                     } />
                 ))}
             </div>
-            <BlurIn word={CTA} className="" />
+            {/* <BlurIn word={CTA} className="" /> */}
         </div>
     );
 };

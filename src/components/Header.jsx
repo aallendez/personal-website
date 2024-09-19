@@ -16,17 +16,22 @@ const BurgerMenu = ({ theme, toggleTheme, iconColor }) => {
   };
 
   const verticalOptions = (
-    <div className="fixed top-0 right-0 h-screen w-full flex flex-col items-center justify-center bg-white dark:bg-color-7 z-20 shadow-lg animate-fade-in">
-      <div className='flex flex-col items-center my-10 gap-16 text-[30px] overflow-auto w-full'>
-        <button
-              className=" hover:translate-x-1 cursor-pointer transition-all  "
+    <div className="fixed top-0 border right-0 h-screen w-full flex flex-col items-center justify-center bg-white dark:bg-color-7 z-20 shadow-lg animate-fade-in">
+      <button
+              className={`hidden sm:flex rounded-full fixed h-[50px] w-[50px] z-30 left-10 top-10 flex-row items-center justify-center gap-10 ${theme === "dark" ? "bg-black" : "bg-green-50"} bg-opacity-40 backdrop-blur-md`}
               onClick={toggleTheme}
+              style={
+                theme === "dark"
+                  ? { borderBottom: '1px solid rgba(245, 238, 230, .5)' }
+                  : { borderBottom: '1px solid rgba(0, 0, 0, .3)' }
+              }
             >
-              {theme === 'dark' ? <LightIcon color={iconColor} /> : <NightIcon color={iconColor} />}
-        </button>
-        <a className=" hover:translate-x-1 cursor-pointer transition-all  " href="#aboutMe">About me...</a>
-        <a className=" hover:translate-x-1 cursor-pointer transition-all  " href="#projects">Projects</a>
-        <a className=" hover:translate-x-1 cursor-pointer transition-all  " href="mailto:juan@aallende.com?subject=Let's%20chat!">Let's chat!</a>
+              {theme === 'dark' ? <LightIcon color={iconColor} classes="w-[50px]" /> : <NightIcon color={iconColor} />}
+      </button>
+      <div className='flex flex-col items-center my-10 gap-16 text-[30px] overflow-auto w-full font-[Sora]'>
+        <a className=" hover:translate-x-1 cursor-pointer transition-all text-lg" href="#aboutMe">About me...</a>
+        <a className=" hover:translate-x-1 cursor-pointer transition-all text-lg " href="#projects">Projects</a>
+        <a className=" hover:translate-x-1 cursor-pointer transition-all text-lg " href="mailto:juan@aallende.com?subject=Let's%20chat!">Let's chat!</a>
       </div>
     </div>
   );
@@ -35,7 +40,7 @@ const BurgerMenu = ({ theme, toggleTheme, iconColor }) => {
     <div >
       <div
         onClick={toggleMenu}
-        className={`hidden sm:flex rounded-full fixed h-[90px] w-[90px] z-30 right-4 top-4 flex-row items-center justify-center gap-10 ${theme === "dark" ? "bg-black" : "bg-green-50"} bg-opacity-40 backdrop-blur-md`}
+        className={`hidden sm:flex rounded-full fixed h-[50px] w-[50px] z-30 right-10 top-10 flex-row items-center justify-center gap-10 ${theme === "dark" ? "bg-black" : "bg-green-50"} bg-opacity-40 backdrop-blur-md`}
         style={
           theme === "dark"
             ? { borderBottom: '1px solid rgba(245, 238, 230, .5)' }

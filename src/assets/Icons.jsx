@@ -88,7 +88,7 @@ const ZapierIcon = ({ color }) => (
 );
 
 const MenuIcon = ({ color }) => (
-  <svg viewBox="0 0 24 24" className='h-[40px]' fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <svg viewBox="0 0 24 24" className='h-[20px]' fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
   <g id="SVGRepo_iconCarrier"> 
   <path d="M4 18L20 18" stroke={color} stroke-width="2" stroke-linecap="round"></path> 
   <path d="M4 12L20 12" stroke={color} stroke-width="2" stroke-linecap="round"></path> 
@@ -98,7 +98,7 @@ const MenuIcon = ({ color }) => (
 );
 
 const CloseIcon = ({ color }) => (
-  <svg viewBox="0 0 24 24" className='h-[40px]' fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <svg viewBox="0 0 24 24" className='h-[20px]' fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
   <g id="SVGRepo_iconCarrier"> <g id="Menu / Close_LG"> 
   <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g>
