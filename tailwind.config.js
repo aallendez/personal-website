@@ -16,7 +16,7 @@ export default {
         'xs': {'max': '400px'},
         'sm': {'max': '640px'},
         'md': {'max': '1000px'},
-        'lg': {'min': '1500px'},
+        'lg': {'min': '1700px'},
       },
       colors: {
         color: {

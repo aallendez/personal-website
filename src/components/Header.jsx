@@ -18,15 +18,15 @@ const BurgerMenu = ({ theme, toggleTheme, iconColor }) => {
   const verticalOptions = (
     <div className="fixed top-0 right-0 h-screen w-full flex flex-col items-center justify-center bg-white dark:bg-color-7 z-20 shadow-lg animate-fade-in">
       <div className='flex flex-col items-center my-10 gap-16 text-[30px] overflow-auto w-full'>
+        <button
+              className=" hover:translate-x-1 cursor-pointer transition-all  "
+              onClick={toggleTheme}
+            >
+              {theme === 'dark' ? <LightIcon color={iconColor} /> : <NightIcon color={iconColor} />}
+        </button>
         <a className=" hover:translate-x-1 cursor-pointer transition-all  " href="#aboutMe">About me...</a>
         <a className=" hover:translate-x-1 cursor-pointer transition-all  " href="#projects">Projects</a>
         <a className=" hover:translate-x-1 cursor-pointer transition-all  " href="mailto:juan@aallende.com?subject=Let's%20chat!">Let's chat!</a>
-        <button
-          className=" hover:translate-x-1 cursor-pointer transition-all  "
-          onClick={toggleTheme}
-        >
-          {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-        </button>
       </div>
     </div>
   );
