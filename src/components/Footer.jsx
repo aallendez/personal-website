@@ -3,7 +3,7 @@ import BlurIn from './BlurIn';
 
 const Footer = ({ iconColor }) => {
   const links = (
-    <div className='flex flex-row h-56 items-center justify-center gap-10 w-full py-6'>
+    <div className='flex flex-row items-center justify-center gap-10 w-full'>
       <a href='https://github.com/aallendez' className='hover:opacity-80 transition-all' target='_blank' rel='noopener noreferrer'>
         <GithubIcon color={iconColor}/>
       </a>

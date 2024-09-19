@@ -22,7 +22,7 @@ const ReactIcon = ({ color }) => (
 );
 
 const GithubIcon = ({ color }) => (
-    <svg fill={color} className='h-[40px]' viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <svg fill={color} className='h-[25px]' viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 
         <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill={color}> 
           <g id="icons" transform="translate(56.000000, 160.000000)"> 
@@ -34,13 +34,13 @@ const GithubIcon = ({ color }) => (
 );
   
 const LinkedinIcon = ({ color }) => (
-    <svg fill={color} className='h-[60px]' viewBox="-5.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <svg fill={color} className='h-[35px]' viewBox="-5.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 8.219v15.563c0 1.469 1.156 2.625 2.625 2.625h15.563c0.719 0 1.406-0.344 1.844-0.781 0.469-0.469 0.781-1.063 0.781-1.844v-15.563c0-1.469-1.156-2.625-2.625-2.625h-15.563c-0.781 0-1.375 0.313-1.844 0.781-0.438 0.438-0.781 1.125-0.781 1.844zM2.813 10.281c0-1 0.813-1.875 1.813-1.875 1.031 0 1.875 0.875 1.875 1.875 0 1.031-0.844 1.844-1.875 1.844-1 0-1.813-0.813-1.813-1.844zM7.844 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.656c0.375 0 0.375 0.438 0.375 0.719 0.75-0.75 1.719-0.938 2.719-0.938 2.438 0 4 1.156 4 3.719v6.438c0 0.219-0.188 0.406-0.375 0.406h-2.75c-0.219 0-0.375-0.219-0.375-0.406v-5.813c0-0.969-0.281-1.5-1.375-1.5-1.375 0-1.719 0.906-1.719 2.125v5.188c0 0.219-0.219 0.406-0.438 0.406h-2.719c-0.156 0-0.375-0.219-0.375-0.406zM2.875 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.719c0.25 0 0.406 0.156 0.406 0.406v9.531c0 0.219-0.188 0.406-0.406 0.406h-2.719c-0.188 0-0.375-0.219-0.375-0.406z" />
     </svg>
 );
   
 const TwitterIcon = ({ color }) => (
-    <svg fill={color} className='h-[40px]' viewBox="0 -2 20 20" xmlns="http://www.w3.org/2000/svg">
+    <svg fill={color} className='h-[25px]' viewBox="0 -2 20 20" xmlns="http://www.w3.org/2000/svg">
       <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill={color}> 
         <g id="icons" transform="translate(56.000000, 160.000000)"> 
           <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#ffffff]"> </path> 
@@ -104,6 +104,36 @@ const CloseIcon = ({ color }) => (
   <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g>
   </svg>
 );
+
+const LightIcon = ({ classes, color }) => {
+  return (
+      <svg viewBox="0 0 24 24" className={`${classes} w-10 rounded-full p-2`} fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier"> <circle cx="12" cy="12" r="5" stroke={color} stroke-width="1.5"></circle> 
+              <path d="M12 2V4" stroke={color} stroke-width="1.5" stroke-linecap="round"></path> 
+              <path d="M12 20V22" stroke={color} stroke-width="1.5" stroke-linecap="round"></path> 
+              <path d="M4 12L2 12" stroke={color} stroke-width="1.5" stroke-linecap="round"></path> 
+              <path d="M22 12L20 12" stroke={color} stroke-width="1.5" stroke-linecap="round"></path> 
+              <path d="M19.7778 4.22266L17.5558 6.25424" stroke={color} stroke-width="1.5" stroke-linecap="round"></path> 
+              <path d="M4.22217 4.22266L6.44418 6.25424" stroke={color} stroke-width="1.5" stroke-linecap="round"></path> 
+              <path d="M6.44434 17.5557L4.22211 19.7779" stroke={color} stroke-width="1.5" stroke-linecap="round"></path> 
+              <path d="M19.7778 19.7773L17.5558 17.5551" stroke={color} stroke-width="1.5" stroke-linecap="round"></path> 
+          </g>
+      </svg>
+      
+  );
+}
+
+const NightIcon = ({ classes, color }) => {
+  return (
+      <svg viewBox="0 0 24 24" className={`${classes} w-10 rounded-full p-2`} fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier"> 
+              <path fill-rule="evenodd" fill={color} clip-rule="evenodd" d="M11.0174 2.80157C6.37072 3.29221 2.75 7.22328 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C16.7767 21.25 20.7078 17.6293 21.1984 12.9826C19.8717 14.6669 17.8126 15.75 15.5 15.75C11.4959 15.75 8.25 12.5041 8.25 8.5C8.25 6.18738 9.33315 4.1283 11.0174 2.80157ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C12.7166 1.25 13.0754 1.82126 13.1368 2.27627C13.196 2.71398 13.0342 3.27065 12.531 3.57467C10.8627 4.5828 9.75 6.41182 9.75 8.5C9.75 11.6756 12.3244 14.25 15.5 14.25C17.5882 14.25 19.4172 13.1373 20.4253 11.469C20.7293 10.9658 21.286 10.804 21.7237 10.8632C22.1787 10.9246 22.75 11.2834 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12Z"></path> 
+          </g>
+      </svg>
+  );
+}
   
-export { GithubIcon, LinkedinIcon, TwitterIcon, TailwindIcon, PythonIcon, ReactIcon, MongoDBIcon, PremiereProIcon, AfterEffectsIcon, PhotoshopIcon, ZapierIcon, MenuIcon, CloseIcon };
+export { GithubIcon, LinkedinIcon, TwitterIcon, TailwindIcon, PythonIcon, ReactIcon, MongoDBIcon, PremiereProIcon, AfterEffectsIcon, PhotoshopIcon, ZapierIcon, MenuIcon, CloseIcon, LightIcon, NightIcon };
   

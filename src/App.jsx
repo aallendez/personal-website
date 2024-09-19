@@ -65,12 +65,13 @@ function App() {
   return (
     <>
       <div className={`w-full xs:px-6 sm:px-2 px-32 lg:px-[20%] h-screen ${theme} cursor-default`}>
-        <Header theme={theme} toggleTheme={toggleTheme} iconColor={iconColor} />
-        <Title theme={theme} />
-        <AboutMe iconColor={iconColor} />
-        <Projects iconColor={iconColor} />
-        <Footer iconColor={iconColor}/>
-        <MouseGlow />
+        <div className='px-20'>
+          <Header theme={theme} toggleTheme={toggleTheme} iconColor={iconColor} />
+          <Title theme={theme} iconColor={iconColor} />
+          <AboutMe iconColor={iconColor} />
+          <Projects iconColor={iconColor} />
+          <MouseGlow />
+        </div>
       </div>
     </>
   );

@@ -6,12 +6,11 @@ import BlurIn from "./BlurIn";
 
 const aboutMe = (
   <div>
-    <p><br />I'm a Full Stack Developer, AI enthusiast and Businessman. I am also a Computer Science & Artificial Intelligence in Spain. 
-    <br />I've always considered myself to be curious. When I was 13 years old, I started shooting and editing videos and eventually got pretty good at it. I also play the guitar, and got a lot into music production. However, since 2023 I am deeply involved in <strong className="hover:opacity-80 transition-opacity">software development</strong> and <strong className="hover:opacity-80 transition-opacity">artificial intelligence</strong>.
-    <br /><br />I love creating software that delivers value to businesses and provides a great user experience. I am also passionate about using the data we collect from these products to improve and iterate.
-    <br /><br />I am a project-based learning person. That's why I continuously want to develop cool projects in different areas. I decided to fit them all into <strong className="hover:opacity-80 transition-opacity">ARKANIS PROJECTS</strong>, the name under which I develop all my projects.
-    <br /><br />If you want to talk about any project, idea or topic, feel free to contact me. I'm always excited to meet new people and learn new things.
-    </p>
+    <p><br />I'm a Full Stack Developer and Computer Science & Artificial Intelligence student based in Madrid, Spain. </p>
+    <p><br />I've always considered myself to be curious. When I was 13 years old, I started shooting and editing videos and eventually got pretty good at it. I also play the guitar, and got a lot into music production. However, since 2023 I am deeply involved in <strong className="hover:opacity-80 transition-opacity">software development</strong> and <strong className="hover:opacity-80 transition-opacity">artificial intelligence</strong>.</p>
+    <p><br />I love creating software that delivers value to businesses and provides a great user experience. I am also a data freak and about using the data we collect from these products to improve and iterate.</p>
+    <p><br />I am a project-based learning person. That's why I continuously develop cool projects in different areas ranging from basic web development to machine learning models.</p>
+    <p><br />If you want to talk about any project, idea or topic, feel free to contact me. I'm always excited to meet new people and learn new things.</p>
   </div>
 );
 
@@ -67,17 +66,17 @@ const AboutMe = ({ iconColor }) => {
       <div id="aboutMe" className="pt-32 w-full min-h-screen flex flex-col-reverse sm:flex-col-reverse md:flex-col-reverse xs:flex-col-reverse text-center gap-20 items-start md:px-4" >
         <div className="w-full group">
           <div className="pb-6">
-            <WordPullUp words="My Tech Stack" className="text-3xl text-left font-bold" />
-            <BlurIn word={techStack} className="text-left" />
+            <WordPullUp words="🛠️ My Tech Stack" className="text-[35px] text-left sm:text-center xs:text-center font-bold" />
+            <BlurIn word={techStack} className="text-left font-[Sora]" />
           </div>
           <div className="py-6">
-            <WordPullUp words="Additional Skills" className="text-3xl text-left font-bold" />
-            <BlurIn word={additionalSkills} className="text-left" />
+            <WordPullUp words="🎥 Additional Skills" className="text-[35px] text-left sm:text-center xs:text-center font-bold" />
+            <BlurIn word={additionalSkills} className="text-left font-[Sora]" />
           </div>
         </div>
         <div className="">
-            <WordPullUp words="Hi! I'm Juan" className="text-3xl text-left font-bold" />
-            <div style={{lineHeight: '2'}}>
+            <WordPullUp words="👋 Hi! I'm Juan" className="text-[35px] text-left sm:text-center xs:text-center font-bold" />
+            <div style={{lineHeight: '1.7'}}>
               <BlurIn word={aboutMe} className="text-left" />
             </div>
             
@@ -89,3 +88,4 @@ const AboutMe = ({ iconColor }) => {
 }
 
 export default AboutMe;
+

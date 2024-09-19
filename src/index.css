@@ -12,6 +12,8 @@
   --font-code: "Source Code Pro", monospace;
   --font-grotesk: "Space Grotesk", sans-serif;
   color-scheme: 'light';
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
 }
 
 /* Add dark mode colors */

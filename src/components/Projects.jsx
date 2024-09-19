@@ -5,16 +5,26 @@ import chatbot_larocket from '../assets/chatbot_larocket.png';
 import euro2024 from '../assets/euro2024.jpeg';
 import { ReactIcon } from '../assets/Icons';
 import WordPullUp from './WordPullUp';
+import crickleCreek from '../assets/crickleCreek.png';
 import BlurIn from './BlurIn';
 
 const ProjectInfo = [
+    {
+        title:"Subscription Flow for Coffee Brand",
+        img: crickleCreek,
+        description: "I developed a subscription flow for a coffee brand in which users can discover their best coffee fit and order.",
+        report: "",
+        link: "https://www.cricklecreekcoffee.com",
+        stack: ["React", "TailwindCSS", "ShopifyAPI", "GraphiQL"],
+        date: "August 2024"
+    },
     {
         title:"ML Related Project",
         img: euro2024,
         description: "I'm a football fan and my team, Spain, reached the final. I used my machine learning knowledge to predict the outcome of the final.",
         report: "",
         stack: ["Python", "Machine Learning"],
-        date: "July 2024 - Present"
+        date: "July 2024"
     },
     {
         title:"Proof of Concept Design for a Pitch",
@@ -53,25 +63,13 @@ const ProjectInfo = [
     },
 ];
 
-const ProjectPopUp = ({ report }) => {
-    return(
-        <>
-            <div className="absolute bg-black rounded-2xl shadow p-6 overflow-auto w-[600px] h-[400px] flex flex-col items-center justify-start z-[101]">
-                <h1 className="text-center text-3xl">Report</h1>
-                <p>{report}</p>
-            </div>
-            
-        </>
-    );
-};
-
 const StackComponent = ({ stack, filterList }) => {
     const handleFilter = () => {
         filterList.push(...stack);  
     };
 
     return(
-        <button class="rounded-full text-xs px-3 py-2 w-auto flex flex-row bg-green-500 hover:bg-green-400 transition-all">
+        <button class="rounded-full text-xs px-3 py-2 w-auto flex flex-row bg-green-500 hover:bg-green-400 font-[Sora] transition-all">
             <h1>{stack}</h1>
         </button>
     );
@@ -91,7 +89,7 @@ const Project = ({ title, img, description, report, link, iconColor, stack, date
     return (
         <>
             <a href={link} target='_blank'>
-                <div className="flex w-[900px] h-auto flex-row xs:flex-col sm:flex-col md:flex-col items-start md:w-[350px] sm:items-start text-center justify-center my-16 sm:my-24 xs:my-24 gap-10 rounded-3xl transition-all cursor-pointer peer long-transition group" >
+                <div className={`flex w-[900px] px-20 opacity-60 hover:opacity-100 h-auto flex-row xs:flex-col sm:flex-col md:flex-col items-start md:w-[350px] sm:items-start text-center justify-center my-16 sm:my-24 xs:my-24 gap-10 rounded-3xl transition-all ${link ? "cursor-pointer" : ""} peer long-transition group`} >
                     <img
                         src={img}
                         alt={title}
@@ -99,13 +97,13 @@ const Project = ({ title, img, description, report, link, iconColor, stack, date
                     />
                     <div className="text-left flex flex-col w-2/3 md:w-full h-[150px] items-start justify-start">
                         <div className="text-2xl flex flex-row gap-2 w-full">
-                            <h1 className='group-hover:font-bold max-w-1/2 md:w-full'>{title}</h1>
-                            <p className="my-2 font-light opacity-70 text-xs">{date}</p>
-                            <div className="transition-transform transform group-hover:translate-x-1 group-hover:-translate-y-1 flex ">
+                            <h1 className='font-bold min-w-1/2 md:w-full'>{title}</h1>
+                            <p className="my-2 font-light opacity-70 min-w-[80px] text-xs">{date}</p>
+                            <div className={`transition-transform transform ${link ? "group-hover:translate-x-1 group-hover:-translate-y-1" : "hidden"} flex `}>
                                 {ShareIcon}
                             </div>    
                         </div>
-                        <p className="my-2 font-light opacity-70 text-sm">{description}</p>
+                        <p className="my-2 font-light opacity-70 text-sm font-[Sora]">{description}</p>
                         <div className='flex flex-row gap-4 mt-auto'>
                             {stack.map((stack) => (
                                 <StackComponent stack={stack} filterList={filterList}/>     
@@ -149,9 +147,9 @@ const Projects = ({ iconColor }) => {
     return (
         <div id="projects" className="pt-32 relative min-h-screen h-auto w-full flex flex-col items-center justify-center">
 
-            <WordPullUp words="Recent Selected Projects" className="text-3xl font-bold w-full text-center mb-6" />
-            <div className='flex flex-col items-start md:items-center sm:items-center xs:items-center justify-center sm:px-2 xs:px-0 w-auto groupProj'>
-                <BlurIn word={divider} className={`${iconColor==="#000000" ? "bg-black" : "bg-white"} w-full h-[1px] my-6 md:w-3/4 opacity-80`} />
+            <WordPullUp words="🍳 Recent Projects" className="text-[35px] font-bold w-full text-left mb-6" />
+            <div className='flex flex-col items-start md:items-center sm:items-center xs:items-center justify-center sm:px-2 xs:px-0 w-auto '>
+                {/* <BlurIn word={divider} className={`${iconColor==="#000000" ? "bg-black" : "bg-white"} w-full h-[1px] my-6 md:w-3/4 opacity-80`} /> */}
                 {ProjectInfo.map((project) => (
                     <BlurIn key={project.title} word={
                         <Project
