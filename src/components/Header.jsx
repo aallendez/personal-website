@@ -26,7 +26,7 @@ const BurgerMenu = ({ theme, toggleTheme, iconColor }) => {
                   : { borderBottom: '1px solid rgba(0, 0, 0, .3)' }
               }
             >
-              {theme === 'dark' ? <LightIcon color={iconColor} classes="w-[50px]" /> : <NightIcon color={iconColor} />}
+              {theme === 'dark' ? <LightIcon color="#FFFFFF" classes="w-[50px]" /> : <NightIcon color="#000000" />}
       </button>
       <div className='flex flex-col items-center my-10 gap-16 text-[30px] overflow-auto w-full font-[Sora]'>
         <a className=" hover:translate-x-1 cursor-pointer transition-all text-lg" href="#aboutMe">About me...</a>
