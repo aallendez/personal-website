@@ -35,7 +35,7 @@ const ProjectInfo = [
         img: chatbot_larocket,
         description: "I created a customer service chatbot for LaRocket.",
         report: "I created the website for a rocketstove brand.",
-        link: "https://www.larocket.es",
+        link: "https://updated-larocket-ai.onrender.com/",
         stack: ["HTML", "CSS", "JavaScript", "Python"],
         date: "March 2024",
     },
