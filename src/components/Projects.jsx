@@ -12,7 +12,7 @@ import stonks from '../assets/stonks.png';
 
 const ProjectInfo = [
     {
-        title:"Stonks App - Expense Management System",
+        title:"Stonks App - Finance Tracker",
         img: stonks,
         description: "I developed an proof of concept expense management system to gain insights on personal expenses.",
         report: "",
@@ -21,7 +21,7 @@ const ProjectInfo = [
         date: "November 2024"
     },
     {
-        title:"Subscription Flow for Coffee Brand",
+        title:"Coffee Brand Subscription Flow",
         img: crickleCreek,
         description: "I developed a subscription flow for a coffee brand in which users can discover their best coffee fit and order.",
         report: "",
@@ -30,20 +30,13 @@ const ProjectInfo = [
         date: "October 2024"
     },
     {
-        title:"ML Related Project",
+        title:"ML Project - Euro 2024 Final",
         img: euro2024,
         description: "I'm a football fan and my team, Spain, reached the final. I used my machine learning knowledge to predict the outcome of the final.",
         report: "",
+        link: "https://github.com/aallendez/euro-final-ml-prediction",
         stack: ["Python", "Machine Learning"],
         date: "July 2024"
-    },
-    {
-        title:"Proof of Concept Design for a Pitch",
-        img: Nokia,
-        description: "After working with react for about a month, I decided to challenge myself and create a proof of concept design for a pitch with React in less than a week.",
-        report: "",
-        stack: ["React", "TailwindCSS"],
-        date: "June 2024"
     },
     {
         title: "Zeffo AI Audits",
@@ -58,7 +51,7 @@ const ProjectInfo = [
         img: chatbot_larocket,
         description: "I created a customer service chatbot for LaRocket.",
         report: "I created the website for a rocketstove brand.",
-        link: "https://updated-larocket-ai.onrender.com/",
+        link: null,
         stack: ["HTML", "CSS", "JavaScript", "Python"],
         date: "March 2024",
     },
@@ -67,7 +60,7 @@ const ProjectInfo = [
         img: larocket_web,
         description: "I created the website for a rocketstove brand.",
         report: "I created the website for a rocketstove brand.",
-        link: "https://www.larocket.es",
+        link: null,
         stack: ["HTML", "CSS", "JavaScript"],
         date: "February 2024",
     },
@@ -99,7 +92,7 @@ const Project = ({ title, img, description, report, link, iconColor, stack, date
     return (
         <>
             <a href={link} target='_blank'>
-                <div className={`flex w-[900px] px-20 sm:px-4 opacity-60 hover:opacity-100 h-auto flex-row xs:flex-col sm:flex-col md:flex-col items-start md:w-[350px] sm:items-start text-center justify-center my-16 sm:my-24 xs:my-24 gap-10 rounded-3xl transition-all ${link ? "cursor-pointer" : ""} peer long-transition group`} >
+                <div className={`flex w-[900px] px-20 sm:px-4 opacity-80 hover:opacity-100 h-auto flex-row xs:flex-col sm:flex-col md:flex-col items-start md:w-[350px] sm:items-start text-center justify-center my-16 sm:my-24 xs:my-24 gap-10 rounded-3xl transition-all ${link ? "cursor-pointer" : ""} peer long-transition group`} >
                     <img
                         src={img}
                         alt={title}
@@ -107,12 +100,12 @@ const Project = ({ title, img, description, report, link, iconColor, stack, date
                     />
                     <div className="text-left flex flex-col w-2/3 md:w-full h-[150px] items-start justify-start">
                         <div className="text-2xl flex flex-row sm:items-start gap-2 w-full sm:text-[22px]">
-                            <h1 className='font-bold min-w-1/2 md:w-full'>{title}</h1>
-                            <p className="my-2 font-light opacity-70 min-w-[80px] text-xs">{date}</p>
+                            <h1 className='font-bold min-w-1/2 md:w-full '>{title}</h1>
                             <div className={`transition-transform transform ${link ? "group-hover:translate-x-1 group-hover:-translate-y-1" : "hidden"} flex `}>
                                 {ShareIcon}
                             </div>    
                         </div>
+                            <p className="my-2 font-light opacity-70 min-w-[100px] text-xs">{date}</p>
                         <p className="my-2 font-light opacity-70 text-sm sm:text[10px] font-[Sora]">{description}</p>
                         <div className='flex flex-row flex-wrap gap-4 mt-auto w-full'>
                             {stack.map((stack) => (

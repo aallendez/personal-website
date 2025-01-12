@@ -1,8 +1,10 @@
 import { TailwindIcon, ReactIcon, PythonIcon, MongoDBIcon, PremiereProIcon, AfterEffectsIcon, PhotoshopIcon, ZapierIcon } from "../assets/Icons";
-import { SiMysql } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
+import { SiFastapi, SiMongodb } from "react-icons/si";
+import { FaAws, FaPython, FaReact } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
 import { GrMysql } from "react-icons/gr";
+import { RiTailwindCssFill } from "react-icons/ri";
+
 
 
 import WordPullUp from "./WordPullUp";
@@ -25,19 +27,15 @@ const AboutMe = ({ iconColor }) => {
         <div className="w-full grid grid-cols-4 xs:grid xs:grid-cols-2 gap-10 justify-around my-2">
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>React</p>
-            <div className="mt-auto"><ReactIcon color={iconColor} /></div>
-          </div>
-          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
-            <p>Python</p>
-            <div className="mt-auto"><PythonIcon color={iconColor} /></div>
-          </div>
-          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
-            <p>MongoDB</p>
-            <div className="mt-auto"><MongoDBIcon color={iconColor} /></div>
+            <div className="mt-auto"><FaReact color={iconColor} size={40} /></div>
           </div>
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>Tailwindcss</p>
-            <div className="mt-auto"><TailwindIcon color={iconColor} /></div>
+            <div className="mt-auto"><RiTailwindCssFill color={iconColor} size={40} /></div>
+          </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>MongoDB</p>
+            <div className="mt-auto"><SiMongodb color={iconColor} size={40} /></div>
           </div>
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>MySQL</p>
@@ -50,6 +48,14 @@ const AboutMe = ({ iconColor }) => {
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>Azure</p>
             <div className="mt-auto"><VscAzure color={iconColor} size={40} /></div>
+          </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>Python</p>
+            <div className="mt-auto"><FaPython color={iconColor} size={40} /></div>
+          </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>FastAPI</p>
+            <div className="mt-auto"><SiFastapi color={iconColor} size={40} /></div>
           </div>
         </div>         
       </div>
