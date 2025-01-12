@@ -7,16 +7,27 @@ import { ReactIcon } from '../assets/Icons';
 import WordPullUp from './WordPullUp';
 import crickleCreek from '../assets/crickleCreek.png';
 import BlurIn from './BlurIn';
+import stonks from '../assets/stonks.png';
+
 
 const ProjectInfo = [
+    {
+        title:"Stonks App - Expense Management System",
+        img: stonks,
+        description: "I developed an proof of concept expense management system to gain insights on personal expenses.",
+        report: "",
+        link: "https://www.loom.com/share/6890bb6f4f3a486891700ad43c832a97?sid=d1c9a8be-22ce-44f3-83c0-88e186fb1a58",
+        stack: ["Full-Stack", "React", "MySQL", "Azure", "Python"],
+        date: "November 2024"
+    },
     {
         title:"Subscription Flow for Coffee Brand",
         img: crickleCreek,
         description: "I developed a subscription flow for a coffee brand in which users can discover their best coffee fit and order.",
         report: "",
         link: "https://www.cricklecreekcoffee.com",
-        stack: ["React", "TailwindCSS", "ShopifyAPI", "GraphiQL"],
-        date: "August 2024"
+        stack: ["React", "TailwindCSS", "ShopifyAPI", "GraphQL"],
+        date: "October 2024"
     },
     {
         title:"ML Related Project",

@@ -1,4 +1,9 @@
 import { TailwindIcon, ReactIcon, PythonIcon, MongoDBIcon, PremiereProIcon, AfterEffectsIcon, PhotoshopIcon, ZapierIcon } from "../assets/Icons";
+import { SiMysql } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { VscAzure } from "react-icons/vsc";
+import { GrMysql } from "react-icons/gr";
+
 
 import WordPullUp from "./WordPullUp";
 
@@ -17,7 +22,7 @@ const aboutMe = (
 const AboutMe = ({ iconColor }) => {
     const techStack = (
       <div className='flex flex-col items-start justify-center my-10'>
-        <div className="w-full flex flex-row xs:grid xs:grid-cols-2 gap-6 justify-around my-2">
+        <div className="w-full grid grid-cols-4 xs:grid xs:grid-cols-2 gap-10 justify-around my-2">
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>React</p>
             <div className="mt-auto"><ReactIcon color={iconColor} /></div>
@@ -34,13 +39,25 @@ const AboutMe = ({ iconColor }) => {
             <p>Tailwindcss</p>
             <div className="mt-auto"><TailwindIcon color={iconColor} /></div>
           </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>MySQL</p>
+            <div className="mt-auto"><GrMysql color={iconColor} size={40} /></div>
+          </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>AWS</p>
+            <div className="mt-auto"><FaAws color={iconColor} size={40} /></div>
+          </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>Azure</p>
+            <div className="mt-auto"><VscAzure color={iconColor} size={40} /></div>
+          </div>
         </div>         
       </div>
     ); 
     
     const additionalSkills = (
       <div className='flex flex-col items-start justify-center my-10'>
-        <div className="w-full flex flex-row xs:grid xs:grid-cols-2 gap-6 justify-around my-2">
+        <div className="w-full grid grid-cols-4 gap-10 xs:grid xs:grid-cols-2 justify-around my-2">
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>Premiere Pro</p>
             <div className="mt-auto"><PremiereProIcon color={iconColor} /></div>
