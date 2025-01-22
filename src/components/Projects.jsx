@@ -25,7 +25,7 @@ const ProjectInfo = [
         img: crickleCreek,
         description: "I developed a subscription flow for a coffee brand in which users can discover their best coffee fit and order.",
         report: "",
-        link: "https://www.cricklecreekcoffee.com",
+        link: "https://www.cricklecreekcoffee.com/pages/subscription",
         stack: ["React", "TailwindCSS", "ShopifyAPI", "GraphQL"],
         date: "October 2024"
     },
