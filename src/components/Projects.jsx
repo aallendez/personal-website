@@ -8,9 +8,19 @@ import WordPullUp from './WordPullUp';
 import crickleCreek from '../assets/crickleCreek.png';
 import BlurIn from './BlurIn';
 import stonks from '../assets/stonks.png';
+import pledge from '../assets/pledge.png';
 
 
 const ProjectInfo = [
+    {
+        title: "Pledge",
+        img: pledge,
+        description: "Me and the pledge team are building a mobile app to stop social media addiction.",
+        report: "",
+        link: "https://www.fuckscrolling.com",
+        stack: ["React", "React Native", "Stripe API"],
+        date: "October 2024 - January 2025"
+    },
     {
         title:"Stonks App - Finance Tracker",
         img: stonks,
@@ -38,14 +48,14 @@ const ProjectInfo = [
         stack: ["Python", "Machine Learning"],
         date: "July 2024"
     },
-    {
-        title: "Zeffo AI Audits",
-        img: Zeffo,
-        description: "I created a tailored web scraper and fine tuned llm to produced quality audits for eccomerce websites.",
-        report: "I created AI.",
-        stack: ["React", "TailwindCSS", "MongoDB", "Python"],
-        date: "May 2024",
-    },
+    // {
+    //     title: "Zeffo AI Audits",
+    //     img: Zeffo,
+    //     description: "I created a tailored web scraper and fine tuned llm to produced quality audits for eccomerce websites.",
+    //     report: "I created AI.",
+    //     stack: ["React", "TailwindCSS", "MongoDB", "Python"],
+    //     date: "May 2024",
+    // },
     {
         title: "LaRocket RAG ChatBot",
         img: chatbot_larocket,
