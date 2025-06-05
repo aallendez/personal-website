@@ -9,9 +9,19 @@ import crickleCreek from '../assets/crickleCreek.png';
 import BlurIn from './BlurIn';
 import stonks from '../assets/stonks.png';
 import pledge from '../assets/pledge.png';
+import spoticircle from '../assets/spoticircle.png';
 
 
 const ProjectInfo = [
+    {
+        title: "Spoticircle",
+        img: spoticircle,
+        description: "Spoticircle transforms spotify stats into constellations. Private due to API limitations, DM me to try it!",
+        report: "",
+        link: "https://www.spoticircle.xyz",
+        stack: ["React", "Typescript", "Spotify API"],
+        date: "June 2025"
+    },
     {
         title: "Pledge",
         img: pledge,
@@ -63,7 +73,7 @@ const ProjectInfo = [
         report: "I created the website for a rocketstove brand.",
         link: null,
         stack: ["HTML", "CSS", "JavaScript", "Python"],
-        date: "March 2024",
+        date: "March 2024 - (Discontinued)",
     },
     {
         title: "LaRocket Website",
@@ -72,7 +82,7 @@ const ProjectInfo = [
         report: "I created the website for a rocketstove brand.",
         link: null,
         stack: ["HTML", "CSS", "JavaScript"],
-        date: "February 2024",
+        date: "February 2024 - (Discontinued)",
     },
 ];
 
