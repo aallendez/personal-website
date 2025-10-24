@@ -1,10 +1,8 @@
-import { TailwindIcon, ReactIcon, PythonIcon, MongoDBIcon, PremiereProIcon, AfterEffectsIcon, PhotoshopIcon, ZapierIcon } from "../assets/Icons";
-import { SiFastapi, SiMongodb } from "react-icons/si";
-import { FaAws, FaPython, FaReact } from "react-icons/fa";
+import { FaAws, FaPython, FaReact, FaCode, FaCloud, FaDocker, FaServer, FaJava, FaGithub } from "react-icons/fa";
+import { SiFastapi, SiMongodb, SiTypescript } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
-import { GrMysql } from "react-icons/gr";
+import { GrMysql, GrGraphQl } from "react-icons/gr";
 import { RiTailwindCssFill } from "react-icons/ri";
-
 
 
 import WordPullUp from "./WordPullUp";
@@ -25,14 +23,24 @@ const AboutMe = ({ iconColor }) => {
     const techStack = (
       <div className='flex flex-col items-start justify-center my-10'>
         <div className="w-full grid grid-cols-4 xs:grid xs:grid-cols-2 gap-10 justify-around my-2">
+          {/* Core Programming Languages */}
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
-            <p>React</p>
-            <div className="mt-auto"><FaReact color={iconColor} size={40} /></div>
+            <p>Python</p>
+            <div className="mt-auto"><FaPython color={iconColor} size={40} /></div>
           </div>
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
-            <p>Tailwindcss</p>
-            <div className="mt-auto"><RiTailwindCssFill color={iconColor} size={40} /></div>
+            <p>C</p>
+            <div className="mt-auto"><FaCode color={iconColor} size={40} /></div>
           </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>Java</p>
+            <div className="mt-auto"><FaJava color={iconColor} size={40} /></div>
+          </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>Typescript</p>
+            <div className="mt-auto"><SiTypescript color={iconColor} size={40} /></div>
+          </div>
+          {/* Databases */}
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>MongoDB</p>
             <div className="mt-auto"><SiMongodb color={iconColor} size={40} /></div>
@@ -41,6 +49,7 @@ const AboutMe = ({ iconColor }) => {
             <p>MySQL</p>
             <div className="mt-auto"><GrMysql color={iconColor} size={40} /></div>
           </div>
+          {/* Cloud & DevOps */}
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>AWS</p>
             <div className="mt-auto"><FaAws color={iconColor} size={40} /></div>
@@ -50,39 +59,36 @@ const AboutMe = ({ iconColor }) => {
             <div className="mt-auto"><VscAzure color={iconColor} size={40} /></div>
           </div>
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
-            <p>Python</p>
-            <div className="mt-auto"><FaPython color={iconColor} size={40} /></div>
+            <p>Docker</p>
+            <div className="mt-auto"><FaDocker color={iconColor} size={40} /></div>
           </div>
+          {/* Version Control & Collaboration */}
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>GitHub</p>
+            <div className="mt-auto"><FaGithub color={iconColor} size={40} /></div>
+          </div>
+          {/* API Technologies */}
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>gRPC</p>
+            <div className="mt-auto"><FaServer color={iconColor} size={40} /></div>
+          </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>GraphQL</p>
+            <div className="mt-auto"><GrGraphQl color={iconColor} size={40} /></div>
+          </div>
+          {/* Other */}
           <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
             <p>FastAPI</p>
             <div className="mt-auto"><SiFastapi color={iconColor} size={40} /></div>
+          </div>
+          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
+            <p>Tailwindcss</p>
+            <div className="mt-auto"><RiTailwindCssFill color={iconColor} size={40} /></div>
           </div>
         </div>         
       </div>
     ); 
     
-    const additionalSkills = (
-      <div className='flex flex-col items-start justify-center my-10'>
-        <div className="w-full grid grid-cols-4 gap-10 xs:grid xs:grid-cols-2 justify-around my-2">
-          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
-            <p>Premiere Pro</p>
-            <div className="mt-auto"><PremiereProIcon color={iconColor} /></div>
-          </div>
-          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
-            <p>Photoshop</p>
-            <div className="mt-auto"><PhotoshopIcon color={iconColor} /></div>
-          </div>
-          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
-            <p>After Effects</p>
-            <div className="mt-auto"><AfterEffectsIcon color={iconColor} /></div>
-          </div>
-          <div className="flex w-32 flex-col items-center justify-start gap-6 peer long-transition">
-            <p>Zapier</p>
-            <div className="mt-auto"><ZapierIcon color={iconColor} /></div>
-          </div>
-        </div>
-      </div>
-    );
 
   
     return(
@@ -91,10 +97,6 @@ const AboutMe = ({ iconColor }) => {
           <div className="pb-6">
             <WordPullUp words="🛠️ My Tech Stack" className="text-[35px] text-left sm:text-[24px] xs:text-[20px] font-bold" />
             <BlurIn word={techStack} className="text-left font-[Sora] sm:text-[12px] sm:text-center" />
-          </div>
-          <div className="py-6">
-            <WordPullUp words="🎥 Additional Skills" className="text-[35px] text-left sm:text-[24px] xs:text-[20px] font-bold" />
-            <BlurIn word={additionalSkills} className="text-left font-[Sora] sm:text-[12px] sm:text-center" />
           </div>
         </div>
         <div className="">
