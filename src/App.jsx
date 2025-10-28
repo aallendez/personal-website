@@ -72,7 +72,7 @@ function App() {
           <AboutMe iconColor={iconColor} />
           <Projects iconColor={iconColor} />
           <div className='text-center text-sm p-6 flex flex-col items-center justify-center gap-2'>
-            🇪🇸 Built by Juan in July 2023
+            🇪🇸 Built by Juan in July 2024
             <p className='text-[10px] opacity-50'>Last updated: 28/10/2025</p>
           </div>
           <MouseGlow />
