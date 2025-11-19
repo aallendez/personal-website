@@ -4,6 +4,7 @@ import Nokia from '../assets/Nokia.png';
 import chatbot_larocket from '../assets/chatbot_larocket.png';
 import euro2024 from '../assets/euro2024.jpeg';
 import { ReactIcon } from '../assets/Icons';
+import holonote from '../assets/holonote.png'
 import WordPullUp from './WordPullUp';
 import crickleCreek from '../assets/crickleCreek.png';
 import BlurIn from './BlurIn';
@@ -13,6 +14,15 @@ import spoticircle from '../assets/spoticircle.png';
 
 
 const ProjectInfo = [
+    {
+        title: "Holonote",
+        img: holonote,
+        description: "Holonote is a platform where you can log daily thoughts and actions to get insights on your life!",
+        report: "",
+        link: "https://github.com/aallendez/holonote",
+        stack: ["React", "Typescript", "FastAPI", "Firebase", "PostgreSQL", "GitHub Actions", "Azure"],
+        date: "October 2025"
+    },
     {
         title: "Spoticircle",
         img: spoticircle,
